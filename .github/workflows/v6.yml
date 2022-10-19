@@ -1,4 +1,4 @@
-name: Testing Pitch
+name: Testing Pitch v6
 # run workflow on git push and git pull
 on:
   schedule:
