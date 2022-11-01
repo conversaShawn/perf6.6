@@ -7,7 +7,7 @@ describe('Tests', () => {
   }
 
   beforeEach(() => {
-    cy.clearCookies()
+    // cy.clearCookies()
     cy.visit('/')
     cy.get('.passwordless-continue-password a').click()
     cy.get('[type=email]').type('helena+cy1@pitch.io')
@@ -16,7 +16,7 @@ describe('Tests', () => {
     cy.get('[data-test-id=dashboard-templates-teaser-grid]').children().should('have.length.above', 1)
   })
 
-  it('test 1', () => {
+  it.only('test 1', () => {
     cy.openQuickInsertMenu()
     cy.get('.list-items .popover-item')
         .first()
